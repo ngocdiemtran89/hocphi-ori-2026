@@ -581,6 +581,30 @@
       color: #94a3b8;
     }
 
+    /* PRICE SORT BANNER STYLES */
+    .price-sort-banner {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      padding: 12px 20px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--navy-dark);
+      font-size: 0.95rem;
+    }
+
+    .sort-badge {
+      background: var(--navy-primary);
+      color: var(--white);
+      font-weight: 900;
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
     /* SMART RECOMMENDER WIDGET STYLES */
     .smart-finder-card {
       background: linear-gradient(135deg, #0a2540 0%, #1e40af 100%);
@@ -2158,45 +2182,128 @@
       </div>
     </section>
 
-    <!-- COURSES CARDS GRID -->
+    <!-- COURSES CARDS GRID (SORTED LOWEST TO HIGHEST PRICE) -->
     <section>
       <div class="section-title">
         <h2>👑 DANH SÁCH CÁC GÓI HỌC VÀ HỌC PHÍ ORI ACADEMY 2026</h2>
-        <p>Lựa chọn giữa <strong>Gói Trọn Gói Cam Kết Đầu Ra</strong> hoặc các <strong>Gói Học Lẻ Theo Tháng</strong></p>
+        <p>Lựa chọn giữa <strong>Gói Học Lẻ Theo Tháng</strong> hoặc các <strong>Gói Trọn Gói Cam Kết Đầu Ra</strong></p>
+      </div>
+
+      <div class="price-sort-banner">
+        <span class="sort-badge">📶 THỨ TỰ HỌC PHÍ</span>
+        <strong>Sắp xếp từ THẤP NẤT đến CAO NHẤT (1.600.000đ ➔ 70.000.000đ)</strong> — Cuộn xuống để xem tăng dần từ học lẻ tháng đến gói trọn đời việc làm!
       </div>
 
       <div class="courses-wrapper" id="courses-wrapper">
 
-        <!-- CARD 1 (VIP NỔI BẬT): GÓI TRỌN GÓI TOÀN DIỆN 3 GIAI ĐOẠN -->
-        <div class="course-card trongoi-featured vip-card" data-cat="trongoi career combo">
-          <span class="card-badge gold">👑 VIP TRỌN GÓI ĐẦU RA</span>
+        <!-- 1. GIÁ 1.600.000đ: TOEIC THƯỜNG 12 BUỔI -->
+        <div class="course-card" data-cat="toeic">
           <div class="card-top">
-            <span class="card-tag">👑 Trọn Gói Đào Tạo 3 Giai Đoạn</span>
-            <h3 class="card-h3">Gói Trọn Gói Từ 0 -> Có Việc Làm Hàng Không</h3>
-            <p class="card-desc">Đào tạo trọn gói 3 Giai đoạn từ mất gốc đến khi chính thức nhận việc Hàng Không</p>
+            <span class="card-tag">🎯 TOEIC Lẻ Theo Tháng</span>
+            <h3 class="card-h3">TOEIC Thường 12 Buổi</h3>
+            <p class="card-desc">Chương trình đào tạo chuẩn 1 tháng cho người mới bắt đầu</p>
           </div>
           <div class="card-price-area">
-            <span class="price-number">30.000.000 VNĐ</span>
-            <span class="price-period">Bao Học Đến Khi Nhận Việc</span>
+            <span class="price-number">1.600.000 VNĐ</span>
+            <span class="price-period">1 Tháng (12 buổi)</span>
           </div>
           <div class="card-content">
             <ul class="card-features">
-              <li><span class="check-mark">✓</span> <strong>GĐ 1 (T1-3):</strong> Lấy lại gốc tiếng Anh, 7 phần TOEIC & Chuẩn phát âm IPA</li>
-              <li><span class="check-mark">✓</span> <strong>GĐ 2 (T4-8):</strong> Bứt phá TOEIC 500-700+ & Giao tiếp phản xạ 48 chủ đề</li>
-              <li><span class="check-mark">✓</span> <strong>GĐ 3 (T6-10):</strong> Phỏng vấn 1:1 chuyên sâu Hàng Không & Hỗ trợ đầu ra việc làm</li>
-              <li><span class="check-mark">✓</span> <strong>Bao học lại 0đ</strong> nếu chưa đạt + Hỗ trợ chia đóng 3 đợt phí linh hoạt</li>
+              <li><span class="check-mark">✓</span> <strong>Tăng 100 điểm TOEIC</strong> ngay trong 1 tháng đầu</li>
+              <li><span class="check-mark">✓</span> Tái cấu trúc toàn bộ ngữ pháp & kỹ năng nghe cơ bản</li>
+              <li><span class="check-mark">✓</span> Lớp học chuẩn 12 buổi, giáo viên kèm sát từng học viên</li>
             </ul>
-            <div class="perk-box" style="background: #fef3c7; color: #92400e; border: 1px solid #fde68a;">
-              🎁 Tặng 2 buổi học thử 0đ + CV VIP + Toolkit 5 AI Tools + Cam Kết Đầu Ra
+            <div class="free-trial-banner-pill">
+              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
             </div>
           </div>
           <div class="card-action">
             <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
-            <button type="button" class="btn-cta" style="background: linear-gradient(135deg, #d97706, #b45309);" onclick="openModal('Gói Trọn Gói 3 Giai Đoạn - Từ 0 -> Có Việc Làm (30 Tr)')">Đăng Ký Trọn Gói</button>
+            <button type="button" class="btn-cta" onclick="openModal('TOEIC Thường 12 Buổi (1.6 Tr)')">Đăng Ký Học Lẻ</button>
           </div>
         </div>
 
-        <!-- CARD 2: GÓI TOEIC 550 TRỌN GÓI -->
+        <!-- 2. GIÁ 2.300.000đ: TOEIC CẤP TỐC 20 BUỔI -->
+        <div class="course-card" data-cat="toeic">
+          <div class="card-top">
+            <span class="card-tag">🚀 TOEIC Cấp Tốc 1 Tháng</span>
+            <h3 class="card-h3">TOEIC Cấp Tốc 20 Buổi</h3>
+            <p class="card-desc">Tăng tốc thần tốc 20 buổi giải đề thực chiến</p>
+          </div>
+          <div class="card-price-area">
+            <span class="price-number">2.300.000 VNĐ</span>
+            <span class="price-period">1 Tháng (20 buổi)</span>
+          </div>
+          <div class="card-content">
+            <ul class="card-features">
+              <li><span class="check-mark">✓</span> <strong>Cấp tốc 20 buổi / tháng</strong> bứt phá điểm số tối đa</li>
+              <li><span class="check-mark">✓</span> Luyện giải đề Part 5, 6, 7 & Mẹo tránh bẫy đề thi mới nhất</li>
+              <li><span class="check-mark">✓</span> Rèn luyện phản xạ nghe hiểu nhanh & bứt tốc</li>
+            </ul>
+            <div class="free-trial-banner-pill">
+              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
+            <button type="button" class="btn-cta" onclick="openModal('TOEIC Cấp Tốc 20 Buổi (2.3 Tr)')">Đăng Ký Học Lẻ</button>
+          </div>
+        </div>
+
+        <!-- 3. GIÁ 2.500.000đ: GIAO TIẾP CHUẨN QUỐC TẾ -->
+        <div class="course-card" data-cat="combo">
+          <div class="card-top">
+            <span class="card-tag">🗣️ Giao Tiếp Theo Tháng</span>
+            <h3 class="card-h3">Giao Tiếp Chuẩn Quốc Tế</h3>
+            <p class="card-desc">Phản xạ tự nhiên & Luyện tình huống chuẩn hãng</p>
+          </div>
+          <div class="card-price-area">
+            <span class="price-number">2.500.000 VNĐ/tháng</span>
+            <span class="price-period">Đóng theo tháng</span>
+          </div>
+          <div class="card-content">
+            <ul class="card-features">
+              <li><span class="check-mark">✓</span> Thực hành giao tiếp phản xạ tình huống hàng ngày</li>
+              <li><span class="check-mark">✓</span> Giảng viên kèm sát phản xạ phát âm & ngữ điệu</li>
+              <li><span class="check-mark">✓</span> Linh hoạt đóng phí hàng tháng</li>
+            </ul>
+            <div class="free-trial-banner-pill">
+              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
+            <button type="button" class="btn-cta" onclick="openModal('Giao Tiếp Chuẩn Quốc Tế (2.5 Tr/tháng)')">Đăng Ký Tư Vấn</button>
+          </div>
+        </div>
+
+        <!-- 4. GIÁ 3.000.000đ: AI TRAINING -->
+        <div class="course-card" data-cat="career">
+          <div class="card-top">
+            <span class="card-tag">🤖 Kỹ Năng Công Nghệ</span>
+            <h3 class="card-h3">AI Training Cho Học Viên</h3>
+            <p class="card-desc">Ứng dụng 7 công cụ AI làm chủ Tiếng Anh</p>
+          </div>
+          <div class="card-price-area">
+            <span class="price-number">3.000.000 VNĐ</span>
+            <span class="price-period">10 Buổi Thực Chiến</span>
+          </div>
+          <div class="card-content">
+            <ul class="card-features">
+              <li><span class="check-mark">✓</span> Làm chủ 7 công cụ AI tạo bài tập & trợ lý luyện nói</li>
+              <li><span class="check-mark">✓</span> Tăng tốc độ tự học & tự phản xạ gấp 3 lần</li>
+            </ul>
+            <div class="perk-box">
+              🎁 Tặng 2 buổi trải nghiệm + Gemini Pro
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
+            <button type="button" class="btn-cta" onclick="openModal('AI Training 10 Buổi (3 Tr)')">Đăng Ký Tư Vấn</button>
+          </div>
+        </div>
+
+        <!-- 5. GIÁ 12.000.000đ: GÓI TOEIC 550 TRỌN GÓI -->
         <div class="course-card hot-card" data-cat="toeic trongoi">
           <span class="card-badge green">🎯 TRỌN GÓI BAO ĐẬU</span>
           <div class="card-top">
@@ -2224,7 +2331,7 @@
           </div>
         </div>
 
-        <!-- CARD 3: GÓI TOEIC 600+ TRỌN GÓI -->
+        <!-- 6. GIÁ 15.000.000đ: GÓI TOEIC 600+ TRỌN GÓI -->
         <div class="course-card hot-card" data-cat="toeic trongoi">
           <span class="card-badge green">🎯 TRỌN GÓI BAO ĐẬU</span>
           <div class="card-top">
@@ -2252,7 +2359,7 @@
           </div>
         </div>
 
-        <!-- CARD 4: COMBO TOEIC 600 & GIAO TIẾP TRỌN GÓI -->
+        <!-- 7. GIÁ 20.000.000đ: COMBO TOEIC 600 & GIAO TIẾP TRỌN GÓI -->
         <div class="course-card hot-card" data-cat="combo trongoi">
           <span class="card-badge green">🔥 HOTTEST COMBO TRỌN GÓI</span>
           <div class="card-top">
@@ -2280,7 +2387,34 @@
           </div>
         </div>
 
-        <!-- CARD 5: COMBO TOEIC 750 & GIAO TIẾP VIP TRỌN GÓI -->
+        <!-- 8. GIÁ 20.000.000đ: TA CHUYÊN NGÀNH HÀNG KHÔNG -->
+        <div class="course-card" data-cat="career">
+          <div class="card-top">
+            <span class="card-tag">✈️ Chuyên Ngành Hàng Không</span>
+            <h3 class="card-h3">TA Chuyên Ngành Hàng Không</h3>
+            <p class="card-desc">Giáo trình quốc tế - Tiền đề training Tiếp viên</p>
+          </div>
+          <div class="card-price-area">
+            <span class="price-number">20.000.000 VNĐ</span>
+            <span class="price-period">6 Tháng (≤15 HV/lớp)</span>
+          </div>
+          <div class="card-content">
+            <ul class="card-features">
+              <li><span class="check-mark">✓</span> Đào tạo thuật ngữ cabin crew & xử lý tình huống chuyến bay</li>
+              <li><span class="check-mark">✓</span> Mô phỏng phỏng vấn & training thực tế của hãng</li>
+              <li><span class="check-mark">✓</span> 🌟 <strong>≥10 HV được mở lớp riêng</strong></li>
+            </ul>
+            <div class="free-trial-banner-pill">
+              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
+            <button type="button" class="btn-cta" onclick="openModal('Tiếng Anh Chuyên Ngành Hàng Không (20 Tr)')">Đăng Ký Tư Vấn</button>
+          </div>
+        </div>
+
+        <!-- 9. GIÁ 25.000.000đ: COMBO TOEIC 750 & GIAO TIẾP VIP TRỌN GÓI -->
         <div class="course-card vip-card" data-cat="combo trongoi career">
           <span class="card-badge gold">💎 VIP TRỌN GÓI HÀNG KHÔNG</span>
           <div class="card-top">
@@ -2308,137 +2442,32 @@
           </div>
         </div>
 
-        <!-- CARD 6: TOEIC THƯỜNG (GÓI HỌC LẺ) -->
-        <div class="course-card" data-cat="toeic">
+        <!-- 10. GIÁ 30.000.000đ: GÓI TRỌN GÓI 3 GIAI ĐOẠN -->
+        <div class="course-card trongoi-featured vip-card" data-cat="trongoi career combo">
+          <span class="card-badge gold">👑 VIP TRỌN GÓI ĐẦU RA</span>
           <div class="card-top">
-            <span class="card-tag">🎯 TOEIC Lẻ Theo Tháng</span>
-            <h3 class="card-h3">TOEIC Thường 12 Buổi</h3>
-            <p class="card-desc">Chương trình đào tạo chuẩn 1 tháng cho người mới bắt đầu</p>
+            <span class="card-tag">👑 Trọn Gói Đào Tạo 3 Giai Đoạn</span>
+            <h3 class="card-h3">Gói Trọn Gói Từ 0 -> Có Việc Làm Hàng Không</h3>
+            <p class="card-desc">Đào tạo trọn gói 3 Giai đoạn từ mất gốc đến khi chính thức nhận việc Hàng Không</p>
           </div>
           <div class="card-price-area">
-            <span class="price-number">1.600.000 VNĐ</span>
-            <span class="price-period">1 Tháng (12 buổi)</span>
+            <span class="price-number">30.000.000 VNĐ</span>
+            <span class="price-period">Bao Học Đến Khi Nhận Việc</span>
           </div>
           <div class="card-content">
             <ul class="card-features">
-              <li><span class="check-mark">✓</span> <strong>Tăng 100 điểm TOEIC</strong> ngay trong 1 tháng đầu</li>
-              <li><span class="check-mark">✓</span> Tái cấu trúc toàn bộ ngữ pháp & kỹ năng nghe cơ bản</li>
-              <li><span class="check-mark">✓</span> Lớp học chuẩn 12 buổi, giáo viên kèm sát từng học viên</li>
+              <li><span class="check-mark">✓</span> <strong>GĐ 1 (T1-3):</strong> Lấy lại gốc tiếng Anh, 7 phần TOEIC & Chuẩn phát âm IPA</li>
+              <li><span class="check-mark">✓</span> <strong>GĐ 2 (T4-8):</strong> Bứt phá TOEIC 500-700+ & Giao tiếp phản xạ 48 chủ đề</li>
+              <li><span class="check-mark">✓</span> <strong>GĐ 3 (T6-10):</strong> Phỏng vấn 1:1 chuyên sâu Hàng Không & Hỗ trợ đầu ra việc làm</li>
+              <li><span class="check-mark">✓</span> <strong>Bao học lại 0đ</strong> nếu chưa đạt + Hỗ trợ chia đóng 3 đợt phí linh hoạt</li>
             </ul>
-            <div class="free-trial-banner-pill">
-              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
+            <div class="perk-box" style="background: #fef3c7; color: #92400e; border: 1px solid #fde68a;">
+              🎁 Tặng 2 buổi học thử 0đ + CV VIP + Toolkit 5 AI Tools + Cam Kết Đầu Ra
             </div>
           </div>
           <div class="card-action">
             <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
-            <button type="button" class="btn-cta" onclick="openModal('TOEIC Thường 12 Buổi (1.6 Tr)')">Đăng Ký Học Lẻ</button>
-          </div>
-        </div>
-
-        <!-- CARD 7: TOEIC CẤP TỐC (GÓI HỌC LẺ) -->
-        <div class="course-card" data-cat="toeic">
-          <div class="card-top">
-            <span class="card-tag">🚀 TOEIC Cấp Tốc 1 Tháng</span>
-            <h3 class="card-h3">TOEIC Cấp Tốc 20 Buổi</h3>
-            <p class="card-desc">Tăng tốc thần tốc 20 buổi giải đề thực chiến</p>
-          </div>
-          <div class="card-price-area">
-            <span class="price-number">2.300.000 VNĐ</span>
-            <span class="price-period">1 Tháng (20 buổi)</span>
-          </div>
-          <div class="card-content">
-            <ul class="card-features">
-              <li><span class="check-mark">✓</span> <strong>Cấp tốc 20 buổi / tháng</strong> bứt phá điểm số tối đa</li>
-              <li><span class="check-mark">✓</span> Luyện giải đề Part 5, 6, 7 & Mẹo tránh bẫy đề thi mới nhất</li>
-              <li><span class="check-mark">✓</span> Rèn luyện phản xạ nghe hiểu nhanh & bứt tốc</li>
-            </ul>
-            <div class="free-trial-banner-pill">
-              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
-            </div>
-          </div>
-          <div class="card-action">
-            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
-            <button type="button" class="btn-cta" onclick="openModal('TOEIC Cấp Tốc 20 Buổi (2.3 Tr)')">Đăng Ký Học Lẻ</button>
-          </div>
-        </div>
-
-        <!-- CARD 8: GIAO TIẾP CHUẨN QUỐC TẾ (HỌC LẺ THÁNG) -->
-        <div class="course-card" data-cat="combo">
-          <div class="card-top">
-            <span class="card-tag">🗣️ Giao Tiếp Theo Tháng</span>
-            <h3 class="card-h3">Giao Tiếp Chuẩn Quốc Tế</h3>
-            <p class="card-desc">Phản xạ tự nhiên & Luyện tình huống chuẩn hãng</p>
-          </div>
-          <div class="card-price-area">
-            <span class="price-number">2.500.000 VNĐ/tháng</span>
-            <span class="price-period">Đóng theo tháng</span>
-          </div>
-          <div class="card-content">
-            <ul class="card-features">
-              <li><span class="check-mark">✓</span> Thực hành giao tiếp phản xạ tình huống hàng ngày</li>
-              <li><span class="check-mark">✓</span> Giảng viên kèm sát phản xạ phát âm & ngữ điệu</li>
-              <li><span class="check-mark">✓</span> Linh hoạt đóng phí hàng tháng</li>
-            </ul>
-            <div class="free-trial-banner-pill">
-              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
-            </div>
-          </div>
-          <div class="card-action">
-            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
-            <button type="button" class="btn-cta" onclick="openModal('Giao Tiếp Chuẩn Quốc Tế (2.5 Tr/tháng)')">Đăng Ký Tư Vấn</button>
-          </div>
-        </div>
-
-        <!-- CARD 9: TA CHUYÊN NGÀNH HÀNG KHÔNG -->
-        <div class="course-card" data-cat="career">
-          <div class="card-top">
-            <span class="card-tag">✈️ Chuyên Ngành Hàng Không</span>
-            <h3 class="card-h3">TA Chuyên Ngành Hàng Không</h3>
-            <p class="card-desc">Giáo trình quốc tế - Tiền đề training Tiếp viên</p>
-          </div>
-          <div class="card-price-area">
-            <span class="price-number">20.000.000 VNĐ</span>
-            <span class="price-period">6 Tháng (≤15 HV/lớp)</span>
-          </div>
-          <div class="card-content">
-            <ul class="card-features">
-              <li><span class="check-mark">✓</span> Đào tạo thuật ngữ cabin crew & xử lý tình huống chuyến bay</li>
-              <li><span class="check-mark">✓</span> Mô phỏng phỏng vấn & training thực tế của hãng</li>
-              <li><span class="check-mark">✓</span> 🌟 <strong>≥10 HV được mở lớp riêng</strong></li>
-            </ul>
-            <div class="free-trial-banner-pill">
-              💬 Tặng 2 buổi học thử — Nhắn Zalo Mrs Diễm
-            </div>
-          </div>
-          <div class="card-action">
-            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
-            <button type="button" class="btn-cta" onclick="openModal('Tiếng Anh Chuyên Ngành Hàng Không (20 Tr)')">Đăng Ký Tư Vấn</button>
-          </div>
-        </div>
-
-        <!-- CARD 10: AI TRAINING -->
-        <div class="course-card" data-cat="career">
-          <div class="card-top">
-            <span class="card-tag">🤖 Kỹ Năng Công Nghệ</span>
-            <h3 class="card-h3">AI Training Cho Học Viên</h3>
-            <p class="card-desc">Ứng dụng 7 công cụ AI làm chủ Tiếng Anh</p>
-          </div>
-          <div class="card-price-area">
-            <span class="price-number">3.000.000 VNĐ</span>
-            <span class="price-period">10 Buổi Thực Chiến</span>
-          </div>
-          <div class="card-content">
-            <ul class="card-features">
-              <li><span class="check-mark">✓</span> Làm chủ 7 công cụ AI tạo bài tập & trợ lý luyện nói</li>
-              <li><span class="check-mark">✓</span> Tăng tốc độ tự học & tự phản xạ gấp 3 lần</li>
-            </ul>
-            <div class="perk-box">
-              🎁 Tặng 2 buổi trải nghiệm + Gemini Pro
-            </div>
-          </div>
-          <div class="card-action">
-            <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
-            <button type="button" class="btn-cta" onclick="openModal('AI Training 10 Buổi (3 Tr)')">Đăng Ký Tư Vấn</button>
+            <button type="button" class="btn-cta" style="background: linear-gradient(135deg, #d97706, #b45309);" onclick="openModal('Gói Trọn Gói 3 Giai Đoạn - Từ 0 -> Có Việc Làm (30 Tr)')">Đăng Ký Trọn Gói</button>
           </div>
         </div>
 

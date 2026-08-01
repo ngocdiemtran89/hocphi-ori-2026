@@ -1838,40 +1838,32 @@
       </div>
 
       <div class="finder-options-grid">
-        <button type="button" class="finder-btn" data-goal="matgoc-ground">
-          <span class="finder-icon">🛄</span>
-          <span class="finder-title">Mất gốc -> Việc làm Mặt Đất Sân Bay</span>
-          <span class="finder-sub">Cam kết việc làm mặt đất, học trọn đời đến khi trúng tuyển</span>
-        </button>
-
-        <button type="button" class="finder-btn" data-goal="matgoc-flight">
-          <span class="finder-icon">✈️</span>
-          <span class="finder-title">Mất gốc -> Tiếp Viên Hàng Không</span>
-          <span class="finder-sub">Đào tạo trọn đời từ TOEIC, Giao tiếp, Grooming & Phỏng vấn</span>
-        </button>
-
-        <button type="button" class="finder-btn" data-goal="toeic-bao-dau">
-          <span class="finder-icon">🎯</span>
-          <span class="finder-title">Muốn thi TOEIC 500 - 700+ Bao Đậu</span>
-          <span class="finder-sub">Cam kết trọn gói bao đậu chứng chỉ, đồng hành học lại 0đ</span>
-        </button>
-
-        <button type="button" class="finder-btn" data-goal="giao-tiep">
-          <span class="finder-icon">🗣️</span>
-          <span class="finder-title">Muốn tự tin Giao Tiếp Phản Xạ 2-in-1</span>
-          <span class="finder-sub">Luyện phản xạ 48-60 chủ đề cùng trợ giảng Nước Ngoài</span>
-        </button>
-
-        <button type="button" class="finder-btn" data-goal="toeic-fast">
-          <span class="finder-icon">🚀</span>
-          <span class="finder-title">Cần bằng TOEIC cấp tốc gấp (1 tháng)</span>
-          <span class="finder-sub">Cấp tốc 20 buổi/tháng chuyên sâu giải đề bứt tốc</span>
-        </button>
-
-        <button type="button" class="finder-btn" data-goal="tiet-kiem-thang">
+        <!-- NHÓM 1: HỌC LẺ THEO THÁNG -->
+        <button type="button" class="finder-btn" data-goal="hoc-le-thang">
           <span class="finder-icon">💡</span>
-          <span class="finder-title">Tài chính linh hoạt (Đóng theo tháng)</span>
-          <span class="finder-sub">Gói học lẻ từ 1.6Tr - 2.5Tr/tháng không lo áp lực</span>
+          <span class="finder-title">1. Gói Học Lẻ TOEIC & Giao Tiếp (Theo Tháng)</span>
+          <span class="finder-sub">Đóng theo tháng từ 1.6Tr - 2.5Tr/tháng. Linh hoạt tài chính, không áp lực.</span>
+        </button>
+
+        <!-- NHÓM 2: ĐẢM BẢO ĐẦU RA TOEIC -->
+        <button type="button" class="finder-btn" data-goal="dam-bao-toeic">
+          <span class="finder-icon">🎯</span>
+          <span class="finder-title">2. Cam Kết Đảm Bảo Đầu Ra TOEIC (500 – 700+)</span>
+          <span class="finder-sub">Gói TOEIC 550 (12Tr) hoặc TOEIC 600+ (15Tr). Cam kết bao đậu 100%, học lại 0đ.</span>
+        </button>
+
+        <!-- NHÓM 3: ĐẢM BẢO TOEIC & GIAO TIẾP -->
+        <button type="button" class="finder-btn" data-goal="dam-bao-toeic-giao-tiep">
+          <span class="finder-icon">🚀</span>
+          <span class="finder-title">3. Cam Kết Trọn Gói TOEIC & Giao Tiếp 2-in-1</span>
+          <span class="finder-sub">Combo TOEIC 600 & Giao Tiếp (20Tr). Vừa có bằng vừa giao tiếp trôi chảy, tiết kiệm 7-10Tr.</span>
+        </button>
+
+        <!-- NHÓM 4: ĐẢM BẢO VIỆC LÀM -->
+        <button type="button" class="finder-btn" data-goal="dam-bao-viec-lam">
+          <span class="finder-icon">👑</span>
+          <span class="finder-title">4. Cam Kết Trọn Đời Đảm Bảo Việc Làm Hàng Không</span>
+          <span class="finder-sub">Lộ Trình Mặt Đất (45Tr) hoặc Tiếp Viên Hàng Không (70Tr). Đảm bảo có việc làm, coaching 1-1.</span>
         </button>
       </div>
 
@@ -2828,47 +2820,33 @@
 
     // 4. SMART COURSE RECOMMENDER WIDGET LOGIC
     const recommendationsData = {
-      'matgoc-ground': {
-        name: '🛄 Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất (Trọn Gói Trọn Đời)',
-        price: '45.000.000 VNĐ (Tiết kiệm 18 Triệu so với học lẻ)',
-        reason: '👉 Phù hợp nhất cho bạn muốn thi tuyển vào sân bay (VIAGS, HGS, SASCO...). Học KHÔNG GIỚI HẠN từ TOEIC 600+, Giao tiếp, Tiếng Anh Hàng Không & Coaching 1-1 phỏng vấn Mặt Đất bảo mật.',
-        perks: ['✓ Học trọn đời không giới hạn', '✓ Tiết kiệm 18 Triệu', '✓ Coaching phỏng vấn 1-1', '✓ Hỗ trợ chia đóng đợt'],
-        courseValue: 'Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất (45 Tr)'
+      'hoc-le-thang': {
+        name: '⚡ Gói Học Lẻ Theo Tháng (TOEIC Thường 1.6 Tr & Giao Tiếp Phản Xạ 2.5 Tr)',
+        price: '1.600.000 VNĐ – 2.500.000 VNĐ / Tháng',
+        reason: '👉 Phù hợp nhất cho học viên muốn học linh hoạt, đóng phí theo từng tháng không lo áp lực tài chính. Tăng 100 điểm TOEIC ngay tháng đầu hoặc rèn phản xạ giao tiếp tự nhiên cùng trợ giảng Nước ngoài.',
+        perks: ['✓ Đóng theo tháng linh hoạt', '✓ Tăng 100đ/tháng đầu', '✓ Trợ giảng Nước Ngoài', '✓ Tặng 2 buổi học thử 0đ'],
+        courseValue: 'TOEIC Thường 12 Buổi (1.6 Tr)'
       },
-      'matgoc-flight': {
-        name: '✈️ Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (Trọn Gói Trọn Đời)',
-        price: '70.000.000 VNĐ (Tiết kiệm 13 Triệu so với học lẻ)',
-        reason: '👉 Phù hợp nhất cho mục tiêu trở thành Tiếp Viên Hàng Không. Học KHÔNG GIỚI HẠN cho đến khi trúng tuyển, hỗ trợ đào tạo việc làm Mặt Đất miễn phí trong lúc chờ cải thiện.',
-        perks: ['✓ Học trọn đời đến khi đậu', '✓ Đào tạo Mặt Đất miễn phí', '✓ Sửa Script phỏng vấn 1-1', '✓ Kỹ năng Grooming'],
-        courseValue: 'Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (70 Tr)'
-      },
-      'toeic-bao-dau': {
-        name: '🎯 Gói TOEIC 550 / 600+ Trọn Gói Cam Kết Bao Đậu',
-        price: '12.000.000 VNĐ – 15.000.000 VNĐ',
-        reason: '👉 Phù hợp nhất cho học viên cần bằng chứng chỉ TOEIC 500-700+ chính thức để ra trường hoặc nộp hồ sơ. ORI Academy cam kết bao đậu, đồng hành học lại 0đ nếu chưa đạt.',
-        perks: ['✓ Cam kết bao đậu 100%', '✓ Luyện bộ đề sát IIG', '✓ Tặng 2 buổi học thử 0đ', '✓ Hỗ trợ CV 1 lần'],
+      'dam-bao-toeic': {
+        name: '🎯 Gói Cam Kết Đảm Bảo Đầu Ra Chứng Chỉ TOEIC (500 – 700+ Điểm)',
+        price: '12.000.000 VNĐ – 15.000.000 VNĐ (Tối đa 12 tháng)',
+        reason: '👉 Phù hợp nhất cho học viên cần chứng chỉ TOEIC 500 - 700+ để tốt nghiệp đại học hoặc nộp hồ sơ xin việc. ORI Academy cam kết trọn gói bao đậu 100%, đồng hành học lại miễn phí nếu chưa đạt.',
+        perks: ['✓ Cam kết bao đậu 100%', '✓ Luyện đề bộ đề sát IIG', '✓ Tặng 2 buổi học thử 0đ', '✓ Thiết kế CV 1 lần'],
         courseValue: 'Gói TOEIC 600+ Trọn Gói (15 Tr)'
       },
-      'giao-tiep': {
-        name: '🚀 Combo TOEIC 600 & Giao Tiếp Phản Xạ Trọn Gói (2-in-1)',
-        price: '20.000.000 VNĐ (Tiết kiệm 7 Triệu)',
-        reason: '👉 Phù hợp nhất cho bạn vừa muốn lấy bằng TOEIC 600+ vừa muốn học Giao tiếp phản xạ tự nhiên không giới hạn trong 12 tháng cùng trợ giảng nước ngoài.',
-        perks: ['✓ Vừa bằng vừa giao tiếp', '✓ Tiết kiệm 7 Triệu', '✓ Học Giao tiếp không giới hạn', '✓ Trợ giảng Nước ngoài'],
+      'dam-bao-toeic-giao-tiep': {
+        name: '🚀 Combo Trọn Gói TOEIC & Giao Tiếp Phản Xạ 2-in-1 (Tiết kiệm 7 - 10 Tr)',
+        price: '20.000.000 VNĐ – 25.000.000 VNĐ (Trọn gói 12 tháng)',
+        reason: '👉 Phù hợp nhất cho học viên muốn giải quyết dứt điểm cả 2 mục tiêu: Vừa có bằng TOEIC điểm cao vừa tự tin giao tiếp phản xạ trôi chảy. Học Giao tiếp không giới hạn trong 12 tháng.',
+        perks: ['✓ Tiết kiệm 7 - 10 Triệu', '✓ Vừa bằng vừa giao tiếp', '✓ Học Giao tiếp không giới hạn', '✓ Trợ giảng Nước Ngoài'],
         courseValue: 'Combo TOEIC 600 & Giao Tiếp Trọn Gói (20 Tr)'
       },
-      'toeic-fast': {
-        name: '🚀 TOEIC Cấp Tốc 20 Buổi (1 Tháng Tăng Tốc)',
-        price: '2.300.000 VNĐ / Tháng',
-        reason: '👉 Phù hợp nhất cho học viên cần bứt phá điểm số thi gấp trong 1 tháng. Đào tạo cấp tốc 20 buổi/tháng chuyên sâu giải đề Part 5, 6, 7 & mẹo tránh bẫy.',
-        perks: ['✓ Cấp tốc 20 buổi/tháng', '✓ Mẹo giải đề bứt tốc', '✓ Tặng 2 buổi học thử 0đ'],
-        courseValue: 'TOEIC Cấp Tốc 20 Buổi (2.3 Tr)'
-      },
-      'tiet-kiem-thang': {
-        name: '⚡ TOEIC Thường 12 Buổi / Giao Tiếp Theo Tháng',
-        price: '1.600.000 VNĐ – 2.500.000 VNĐ / Tháng',
-        reason: '👉 Phù hợp nhất cho học viên muốn học linh hoạt đóng phí hàng tháng không lo áp lực tài chính. Tăng 100 điểm TOEIC ngay trong tháng đầu tiên.',
-        perks: ['✓ Đóng theo tháng linh hoạt', '✓ Tăng 100đ/tháng đầu', '✓ Học thử 2 buổi 0đ'],
-        courseValue: 'TOEIC Thường 12 Buổi (1.6 Tr)'
+      'dam-bao-viec-lam': {
+        name: '👑 Gói Trọn Đời Nghề Nghiệp — Đảm Bảo Có Việc Làm Hàng Không / Mặt Đất',
+        price: '45.000.000 VNĐ – 70.000.000 VNĐ (Bao học đến khi nhận việc)',
+        reason: '👉 Phù hợp nhất cho ứng viên muốn theo đuổi sự nghiệp Hàng Không (Tiếp Viên Hàng Không hoặc Nhân Viên Mặt Đất sân bay). Đào tạo trọn đời từ TOEIC 600+, Giao tiếp, Tiếng Anh Hàng không, Grooming & Coaching 1-1 sửa Script phỏng vấn bảo mật.',
+        perks: ['✓ Đảm bảo đầu ra việc làm', '✓ Học trọn đời không giới hạn', '✓ Coaching phỏng vấn 1-1', '✓ Hỗ trợ chia đóng 3 đợt'],
+        courseValue: 'Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (70 Tr)'
       }
     };
 

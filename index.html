@@ -591,6 +591,289 @@
       gap: 10px;
     }
 
+    /* GÓI TRỌN ĐỜI NGHỀ NGHIỆP STYLES */
+    .career-gold-banner {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border: 2px solid #d97706;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      padding: 14px 20px;
+      color: #92400e;
+      font-size: 1.25rem;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+
+    .career-package-card {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+    }
+
+    .career-package-card.red-theme {
+      border-color: #b91c1c;
+    }
+
+    .career-package-card.green-theme {
+      border-color: #047857;
+    }
+
+    .career-header-bar {
+      padding: 18px 24px;
+      color: #ffffff;
+    }
+
+    .career-header-bar.red-bg {
+      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    }
+
+    .career-header-bar.green-bg {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    }
+
+    .career-header-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .career-header-sub {
+      font-size: 0.92rem;
+      opacity: 0.95;
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    .career-top-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    @media (max-width: 768px) {
+      .career-top-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .career-price-box {
+      padding: 20px 24px;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    .career-price-label {
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--gray-text);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .career-price-val {
+      font-size: 2.3rem;
+      font-weight: 900;
+      line-height: 1.1;
+      margin: 4px 0;
+    }
+
+    .red-theme .career-price-val {
+      color: #b91c1c;
+    }
+
+    .green-theme .career-price-val {
+      color: #047857;
+    }
+
+    .career-price-note {
+      font-size: 0.85rem;
+      color: var(--gray-text);
+    }
+
+    .career-saving-box {
+      padding: 20px 24px;
+      background: #fdf2f2;
+    }
+
+    .green-theme .career-saving-box {
+      background: #f0fdf4;
+    }
+
+    .career-saving-title {
+      font-size: 0.9rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .red-theme .career-saving-title {
+      color: #991b1b;
+    }
+
+    .green-theme .career-saving-title {
+      color: #166534;
+    }
+
+    .career-saving-val {
+      font-size: 1.25rem;
+      font-weight: 900;
+      margin: 4px 0;
+    }
+
+    .red-theme .career-saving-val {
+      color: #991b1b;
+    }
+
+    .green-theme .career-saving-val {
+      color: #15803d;
+    }
+
+    .career-saving-sub {
+      font-size: 0.82rem;
+      color: var(--gray-text);
+      font-style: italic;
+    }
+
+    .career-info-bar {
+      padding: 14px 24px;
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.92rem;
+      color: #1e293b;
+    }
+
+    .career-info-bar strong {
+      color: var(--navy-dark);
+    }
+
+    .career-info-note {
+      margin-top: 6px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1e40af;
+    }
+
+    .career-bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 768px) {
+      .career-bottom-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .career-col-includes {
+      padding: 24px;
+      background: #fff5f5;
+      border-right: 1px solid #fee2e2;
+    }
+
+    .green-theme .career-col-includes {
+      background: #f0fdf4;
+      border-right-color: #dcfce7;
+    }
+
+    .career-col-perks {
+      padding: 24px;
+      background: #fffbeb;
+    }
+
+    .career-box-h4 {
+      font-size: 1.05rem;
+      font-weight: 900;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .career-col-includes .career-box-h4 {
+      color: #991b1b;
+    }
+
+    .green-theme .career-col-includes .career-box-h4 {
+      color: #166534;
+    }
+
+    .career-col-perks .career-box-h4 {
+      color: #92400e;
+    }
+
+    .career-list-check, .career-list-star {
+      list-style: none;
+    }
+
+    .career-list-check li {
+      font-size: 0.92rem;
+      color: #1e293b;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+      font-weight: 600;
+    }
+
+    .career-list-check li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #dc2626;
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .green-theme .career-list-check li::before {
+      color: #16a34a;
+    }
+
+    .career-list-star li {
+      font-size: 0.92rem;
+      color: #334155;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .career-list-star li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      color: #d97706;
+      font-size: 1.1rem;
+    }
+
+    .career-action-row {
+      padding: 18px 24px;
+      background: #ffffff;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .career-action-row .btn-trial-zalo {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .career-action-row .btn-cta {
+      flex: 1;
+      min-width: 240px;
+    }
+
     /* SECTION CONTAINERS */
     .section-card {
       background: var(--white);
@@ -1524,6 +1807,122 @@
       </div>
     </section>
 
+    <!-- SECTION GÓI TRỌN ĐỜI NGHỀ NGHIỆP — HOÀNH TRÁNG NHẤT (EXACT MATCH IMAGE) -->
+    <section class="section-card" id="career-lifetime-packages">
+      <div class="career-gold-banner">
+        👑 GÓI TRỌN ĐỜI NGHỀ NGHIỆP — Hoành tráng nhất
+      </div>
+
+      <!-- PACKAGE 1: NHÂN VIÊN MẶT ĐẤT (RED THEME) -->
+      <div class="career-package-card red-theme" data-cat="trongoi career">
+        <div class="career-header-bar red-bg">
+          <div class="career-header-title">🛄 Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất</div>
+          <div class="career-header-sub">Đảm bảo có việc làm mặt đất sân bay — Đồng hành đến khi thành công</div>
+        </div>
+
+        <div class="career-top-grid">
+          <div class="career-price-box">
+            <div class="career-price-label">HỌC PHÍ TRỌN GÓI</div>
+            <div class="career-price-val">45.000.000 VNĐ</div>
+            <div class="career-price-note">(Được chia làm nhiều đợt thanh toán linh hoạt)</div>
+          </div>
+          <div class="career-saving-box">
+            <div class="career-saving-title">💰 Tiết kiệm hơn</div>
+            <div class="career-saving-val">Tiết kiệm 18 triệu so với đóng gói lẻ</div>
+            <div class="career-saving-sub">so với đóng gói lẻ</div>
+          </div>
+        </div>
+
+        <div class="career-info-bar">
+          ⏰ <strong>Thời gian:</strong> Học KHÔNG GIỚI HẠN từ TOEIC cho đến khi có việc làm
+        </div>
+
+        <div class="career-bottom-grid">
+          <div class="career-col-includes">
+            <div class="career-box-h4">📦 Bao gồm</div>
+            <ul class="career-list-check">
+              <li>TOEIC 600+ (15 triệu)</li>
+              <li>Tiếng Anh Giao tiếp phản xạ (20 triệu)</li>
+              <li>Tiếng Anh chuyên ngành Hàng không (20 triệu)</li>
+              <li>AI Training — 5 công cụ học tập (3 triệu)</li>
+              <li>Coaching phỏng vấn mặt đất — có đảm bảo đầu ra (5 triệu)</li>
+            </ul>
+          </div>
+          <div class="career-col-perks">
+            <div class="career-box-h4">🛡️ Đặc quyền kèm theo</div>
+            <ul class="career-list-star">
+              <li>Hỗ trợ làm CV miễn phí 3 lần.</li>
+              <li>Đồng hành làm hồ sơ ứng tuyển.</li>
+              <li>Soạn sửa script phỏng vấn chi tiết.</li>
+              <li>Mô phỏng interview, nhận xét chi tiết qua video ghi hình.</li>
+              <li>Học phỏng vấn 1-1, đảm bảo bảo mật thông tin vấn đáp không bị sao chép, script viết theo profile cá nhân.</li>
+              <li>Được kèm riêng khi không hiểu bài.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="career-action-row">
+          <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
+          <button type="button" class="btn-cta" style="background: linear-gradient(135deg, #dc2626, #991b1b);" onclick="openModal('Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất (45 Tr)')">Đăng Ký Gói Mặt Đất (45 Tr)</button>
+        </div>
+      </div>
+
+      <!-- PACKAGE 2: TIẾP VIÊN HÀNG KHÔNG (GREEN THEME) -->
+      <div class="career-package-card green-theme" data-cat="trongoi career">
+        <div class="career-header-bar green-bg">
+          <div class="career-header-title">✈️ Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không</div>
+          <div class="career-header-sub">Đảm bảo vé vào ngành — Cam kết đồng hành đến khi đậu tiếp viên hàng không</div>
+        </div>
+
+        <div class="career-top-grid">
+          <div class="career-price-box">
+            <div class="career-price-label">HỌC PHÍ TRỌN GÓI</div>
+            <div class="career-price-val">70.000.000 VNĐ</div>
+            <div class="career-price-note">(Được chia làm nhiều đợt thanh toán linh hoạt)</div>
+          </div>
+          <div class="career-saving-box">
+            <div class="career-saving-title">💰 Tiết kiệm hơn</div>
+            <div class="career-saving-val">Học trọn gói không giới hạn — Tiết kiệm tối đa 13 triệu</div>
+            <div class="career-saving-sub">so với đóng gói lẻ</div>
+          </div>
+        </div>
+
+        <div class="career-info-bar">
+          <div>⏰ <strong>Thời gian:</strong> Học KHÔNG GIỚI HẠN cho đến khi có việc</div>
+          <div class="career-info-note">
+            📌 <strong>Ghi chú:</strong> Học viên học FULL COMBO Tiếp viên (không học lẻ) được <strong>hỗ trợ đào tạo việc làm MẶT ĐẤT SÂN BAY miễn phí</strong> trong giai đoạn chờ cải thiện thi Tiếp viên hàng không.
+          </div>
+        </div>
+
+        <div class="career-bottom-grid">
+          <div class="career-col-includes">
+            <div class="career-box-h4">📦 Bao gồm</div>
+            <ul class="career-list-check">
+              <li>TOEIC 600+ (15 triệu)</li>
+              <li>Tiếng Anh chuyên ngành Hàng không (20 triệu)</li>
+              <li>Tiếng Anh Giao tiếp phản xạ (20 triệu)</li>
+              <li>AI Training — 5 công cụ học tập (3 triệu)</li>
+              <li>Kỹ năng Grooming (5 triệu)</li>
+            </ul>
+          </div>
+          <div class="career-col-perks">
+            <div class="career-box-h4">🛡️ Đặc quyền kèm theo</div>
+            <ul class="career-list-star">
+              <li>Hỗ trợ làm CV miễn phí 5 lần.</li>
+              <li>Đồng hành làm hồ sơ ứng tuyển.</li>
+              <li>Soạn sửa script phỏng vấn tiếp viên chi tiết.</li>
+              <li>Mô phỏng interview, nhận xét chi tiết qua video ghi hình.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="career-action-row">
+          <a href="https://zalo.me/0906303373" target="_blank" class="btn-trial-zalo">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO)</a>
+          <button type="button" class="btn-cta" style="background: linear-gradient(135deg, #059669, #047857);" onclick="openModal('Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (70 Tr)')">Đăng Ký Gói Tiếp Viên (70 Tr)</button>
+        </div>
+      </div>
+    </section>
+
     <!-- COURSES CARDS GRID -->
     <section>
       <div class="section-title">
@@ -1833,6 +2232,24 @@
             </tr>
           </thead>
           <tbody>
+            <tr style="background: #f0fdf4;">
+              <td>
+                <span class="tbl-name" style="color: #047857;">✈️ Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không</span>
+                <span class="tbl-sub">Trọn gói trọn đời — TOEIC 600+ + Giao tiếp + TA Hàng không + Grooming + Script 1-1</span>
+              </td>
+              <td><span class="tbl-price-tag" style="background: #dcfce7; color: #047857;">70.000.000đ</span></td>
+              <td>Học KHÔNG GIỚI HẠN cho đến khi đậu</td>
+              <td>★ Tiết kiệm 13 Tr + Hỗ trợ đào tạo MẶT ĐẤT miễn phí trong giai đoạn chờ + CV 5 lần</td>
+            </tr>
+            <tr style="background: #fff5f5;">
+              <td>
+                <span class="tbl-name" style="color: #b91c1c;">🛄 Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất</span>
+                <span class="tbl-sub">Trọn gói trọn đời — TOEIC 600+ + Giao tiếp + TA Hàng không + Coaching Mặt Đất 1-1</span>
+              </td>
+              <td><span class="tbl-price-tag" style="background: #fee2e2; color: #b91c1c;">45.000.000đ</span></td>
+              <td>Học KHÔNG GIỚI HẠN cho đến khi có việc</td>
+              <td>★ Tiết kiệm 18 Tr + Coaching phỏng vấn 1-1 bảo mật + Script cá nhân hóa + CV 3 lần</td>
+            </tr>
             <tr style="background: #fffbeb;">
               <td>
                 <span class="tbl-name" style="color: #b45309;">👑 Gói Trọn Gói 3 Giai Đoạn (Từ 0 -> Có Việc)</span>
@@ -2000,7 +2417,9 @@
         </div>
         <div class="modal-form-group">
           <select id="select-course">
-            <option value="Gói Trọn Gói 3 Giai Đoạn - Từ 0 -> Có Việc Làm (30 Tr)">👑 Gói Trọn Gói 3 Giai Đoạn - Từ 0 -> Có Việc Làm Hàng Không (30 Tr)</option>
+            <option value="Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (70 Tr)">✈️ Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (70 Tr)</option>
+            <option value="Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất (45 Tr)">🛄 Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất (45 Tr)</option>
+            <option value="Gói Trọn Gói 3 Giai Đoạn - Từ 0 -> Có Việc Làm (30 Tr)">👑 Gói Trọn Gói 3 Giai Đoạn - Từ 0 -> Có Việc Làm (30 Tr)</option>
             <option value="Combo TOEIC 750 & Giao Tiếp VIP Trọn Gói (25 Tr)">👑 Combo TOEIC 750 & Giao Tiếp VIP Trọn Gói (25 Tr)</option>
             <option value="Combo TOEIC 600 & Giao Tiếp Trọn Gói (20 Tr)">👑 Combo TOEIC 600 & Giao Tiếp Trọn Gói (20 Tr)</option>
             <option value="Gói TOEIC 600+ Trọn Gói (15 Tr)">👑 Gói TOEIC 600+ Trọn Gói (15 Tr)</option>

@@ -581,14 +581,191 @@
       color: #94a3b8;
     }
 
-    .table-section-title {
-      font-size: 1.2rem;
+    /* SMART RECOMMENDER WIDGET STYLES */
+    .smart-finder-card {
+      background: linear-gradient(135deg, #0a2540 0%, #1e40af 100%);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      margin-bottom: 40px;
+      box-shadow: 0 12px 35px rgba(10, 37, 64, 0.25);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .finder-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .finder-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fef08a;
+      padding: 5px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
       font-weight: 900;
-      color: var(--navy-dark);
-      margin: 30px 0 14px 0;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .finder-header h2 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .finder-header p {
+      color: #cbd5e1;
+      font-size: 0.98rem;
+    }
+
+    .finder-options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-bottom: 25px;
+    }
+
+    .finder-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      color: var(--white);
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.25s ease;
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      gap: 4px;
+      outline: none;
+    }
+
+    .finder-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: #fef08a;
+      transform: translateY(-2px);
+    }
+
+    .finder-btn.active {
+      background: linear-gradient(135deg, #0068ff 0%, #004bbb 100%);
+      border: 2px solid #fef08a;
+      box-shadow: 0 6px 20px rgba(0, 104, 255, 0.4);
+    }
+
+    .finder-icon {
+      font-size: 1.5rem;
+      margin-bottom: 2px;
+    }
+
+    .finder-title {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: var(--white);
+    }
+
+    .finder-sub {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      line-height: 1.3;
+    }
+
+    /* FINDER RESULT DISPLAY BOX */
+    .finder-result-box {
+      background: #ffffff;
+      color: var(--navy-dark);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      border: 3px solid #0068ff;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-badge-recommend {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      font-weight: 900;
+      font-size: 0.8rem;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .result-package-name {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #0f4c81;
+      margin-bottom: 4px;
+    }
+
+    .result-package-price {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #dc2626;
+      margin-bottom: 12px;
+    }
+
+    .result-package-reason {
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      background: #f8fafc;
+      padding: 14px 18px;
+      border-radius: 10px;
+      border-left: 4px solid #0068ff;
+    }
+
+    .result-perks-tags {
+      display: flex;
+      flex-wrap: wrap;
       gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .result-perks-tags span {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      font-size: 0.85rem;
+      font-weight: bold;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .result-action-btns {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .result-action-btns .btn-zalo-direct {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .result-action-btns .btn-cta {
+      flex: 1;
+      min-width: 240px;
+      background: linear-gradient(135deg, #0068ff 0%, #004bbb 100%);
+      color: var(--white);
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 900;
+      cursor: pointer;
     }
 
     /* GÓI TRỌN ĐỜI NGHỀ NGHIỆP STYLES */
@@ -1652,6 +1829,72 @@
       </div>
     </section>
 
+    <!-- TRỢ LÝ AI GỢI Ý GÓI HỌC THÍCH HỢP (HIGH SALES CONVERSION) -->
+    <section class="smart-finder-card" id="smart-recommender">
+      <div class="finder-header">
+        <span class="finder-badge">🤖 TRỢ LÝ GỢI Ý LỘ TRÌNH THÍCH HỢP</span>
+        <h2>🎯 BẠN ĐANG TÌM LỘ TRÌNH HỌC TIẾNG ANH NÀO?</h2>
+        <p>Bấm chọn mục tiêu của bạn bên dưới, hệ thống sẽ đề xuất ngay gói học tối ưu & tiết kiệm nhất!</p>
+      </div>
+
+      <div class="finder-options-grid">
+        <button type="button" class="finder-btn" data-goal="matgoc-ground">
+          <span class="finder-icon">🛄</span>
+          <span class="finder-title">Mất gốc -> Việc làm Mặt Đất Sân Bay</span>
+          <span class="finder-sub">Cam kết việc làm mặt đất, học trọn đời đến khi trúng tuyển</span>
+        </button>
+
+        <button type="button" class="finder-btn" data-goal="matgoc-flight">
+          <span class="finder-icon">✈️</span>
+          <span class="finder-title">Mất gốc -> Tiếp Viên Hàng Không</span>
+          <span class="finder-sub">Đào tạo trọn đời từ TOEIC, Giao tiếp, Grooming & Phỏng vấn</span>
+        </button>
+
+        <button type="button" class="finder-btn" data-goal="toeic-bao-dau">
+          <span class="finder-icon">🎯</span>
+          <span class="finder-title">Muốn thi TOEIC 500 - 700+ Bao Đậu</span>
+          <span class="finder-sub">Cam kết trọn gói bao đậu chứng chỉ, đồng hành học lại 0đ</span>
+        </button>
+
+        <button type="button" class="finder-btn" data-goal="giao-tiep">
+          <span class="finder-icon">🗣️</span>
+          <span class="finder-title">Muốn tự tin Giao Tiếp Phản Xạ 2-in-1</span>
+          <span class="finder-sub">Luyện phản xạ 48-60 chủ đề cùng trợ giảng Nước Ngoài</span>
+        </button>
+
+        <button type="button" class="finder-btn" data-goal="toeic-fast">
+          <span class="finder-icon">🚀</span>
+          <span class="finder-title">Cần bằng TOEIC cấp tốc gấp (1 tháng)</span>
+          <span class="finder-sub">Cấp tốc 20 buổi/tháng chuyên sâu giải đề bứt tốc</span>
+        </button>
+
+        <button type="button" class="finder-btn" data-goal="tiet-kiem-thang">
+          <span class="finder-icon">💡</span>
+          <span class="finder-title">Tài chính linh hoạt (Đóng theo tháng)</span>
+          <span class="finder-sub">Gói học lẻ từ 1.6Tr - 2.5Tr/tháng không lo áp lực</span>
+        </button>
+      </div>
+
+      <!-- RESULT DISPLAY BOX -->
+      <div class="finder-result-box" id="finder-result" style="display: none;">
+        <div class="result-badge-recommend">🌟 GÓI HỌC ĐỀ XUẤT TỐI ƯU NHẤT DÀNH CHO BẠN</div>
+        <h3 class="result-package-name" id="rec-package-name">Gói Trọn Gói 3 Giai Đoạn</h3>
+        <div class="result-package-price" id="rec-package-price">30.000.000 VNĐ</div>
+        <p class="result-package-reason" id="rec-package-reason">Lý do phù hợp...</p>
+
+        <div class="result-perks-tags" id="rec-package-perks">
+          <span>✓ Bao đậu 100%</span>
+          <span>✓ Tặng 2 buổi học thử 0đ</span>
+          <span>✓ Đóng làm nhiều đợt</span>
+        </div>
+
+        <div class="result-action-btns">
+          <a href="https://zalo.me/0906303373" target="_blank" class="btn-zalo-direct">💬 HỌC THỬ 2 BUỔI 0Đ (ZALO MRS DIỄM)</a>
+          <button type="button" class="btn-cta" id="rec-btn-modal" onclick="openModalFromRec()">🚀 ĐĂNG KÝ GÓI NÀY NGAY</button>
+        </div>
+      </div>
+    </section>
+
     <!-- TAB FILTER CHỌN NHU CẦU -->
     <section class="filter-wrapper">
       <div class="filter-tabs">
@@ -2583,9 +2826,96 @@
       }
     };
 
+    // 4. SMART COURSE RECOMMENDER WIDGET LOGIC
+    const recommendationsData = {
+      'matgoc-ground': {
+        name: '🛄 Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất (Trọn Gói Trọn Đời)',
+        price: '45.000.000 VNĐ (Tiết kiệm 18 Triệu so với học lẻ)',
+        reason: '👉 Phù hợp nhất cho bạn muốn thi tuyển vào sân bay (VIAGS, HGS, SASCO...). Học KHÔNG GIỚI HẠN từ TOEIC 600+, Giao tiếp, Tiếng Anh Hàng Không & Coaching 1-1 phỏng vấn Mặt Đất bảo mật.',
+        perks: ['✓ Học trọn đời không giới hạn', '✓ Tiết kiệm 18 Triệu', '✓ Coaching phỏng vấn 1-1', '✓ Hỗ trợ chia đóng đợt'],
+        courseValue: 'Lộ Trình Nghề Nghiệp Nhân Viên Mặt Đất (45 Tr)'
+      },
+      'matgoc-flight': {
+        name: '✈️ Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (Trọn Gói Trọn Đời)',
+        price: '70.000.000 VNĐ (Tiết kiệm 13 Triệu so với học lẻ)',
+        reason: '👉 Phù hợp nhất cho mục tiêu trở thành Tiếp Viên Hàng Không. Học KHÔNG GIỚI HẠN cho đến khi trúng tuyển, hỗ trợ đào tạo việc làm Mặt Đất miễn phí trong lúc chờ cải thiện.',
+        perks: ['✓ Học trọn đời đến khi đậu', '✓ Đào tạo Mặt Đất miễn phí', '✓ Sửa Script phỏng vấn 1-1', '✓ Kỹ năng Grooming'],
+        courseValue: 'Lộ Trình Nghề Nghiệp Tiếp Viên Hàng Không (70 Tr)'
+      },
+      'toeic-bao-dau': {
+        name: '🎯 Gói TOEIC 550 / 600+ Trọn Gói Cam Kết Bao Đậu',
+        price: '12.000.000 VNĐ – 15.000.000 VNĐ',
+        reason: '👉 Phù hợp nhất cho học viên cần bằng chứng chỉ TOEIC 500-700+ chính thức để ra trường hoặc nộp hồ sơ. ORI Academy cam kết bao đậu, đồng hành học lại 0đ nếu chưa đạt.',
+        perks: ['✓ Cam kết bao đậu 100%', '✓ Luyện bộ đề sát IIG', '✓ Tặng 2 buổi học thử 0đ', '✓ Hỗ trợ CV 1 lần'],
+        courseValue: 'Gói TOEIC 600+ Trọn Gói (15 Tr)'
+      },
+      'giao-tiep': {
+        name: '🚀 Combo TOEIC 600 & Giao Tiếp Phản Xạ Trọn Gói (2-in-1)',
+        price: '20.000.000 VNĐ (Tiết kiệm 7 Triệu)',
+        reason: '👉 Phù hợp nhất cho bạn vừa muốn lấy bằng TOEIC 600+ vừa muốn học Giao tiếp phản xạ tự nhiên không giới hạn trong 12 tháng cùng trợ giảng nước ngoài.',
+        perks: ['✓ Vừa bằng vừa giao tiếp', '✓ Tiết kiệm 7 Triệu', '✓ Học Giao tiếp không giới hạn', '✓ Trợ giảng Nước ngoài'],
+        courseValue: 'Combo TOEIC 600 & Giao Tiếp Trọn Gói (20 Tr)'
+      },
+      'toeic-fast': {
+        name: '🚀 TOEIC Cấp Tốc 20 Buổi (1 Tháng Tăng Tốc)',
+        price: '2.300.000 VNĐ / Tháng',
+        reason: '👉 Phù hợp nhất cho học viên cần bứt phá điểm số thi gấp trong 1 tháng. Đào tạo cấp tốc 20 buổi/tháng chuyên sâu giải đề Part 5, 6, 7 & mẹo tránh bẫy.',
+        perks: ['✓ Cấp tốc 20 buổi/tháng', '✓ Mẹo giải đề bứt tốc', '✓ Tặng 2 buổi học thử 0đ'],
+        courseValue: 'TOEIC Cấp Tốc 20 Buổi (2.3 Tr)'
+      },
+      'tiet-kiem-thang': {
+        name: '⚡ TOEIC Thường 12 Buổi / Giao Tiếp Theo Tháng',
+        price: '1.600.000 VNĐ – 2.500.000 VNĐ / Tháng',
+        reason: '👉 Phù hợp nhất cho học viên muốn học linh hoạt đóng phí hàng tháng không lo áp lực tài chính. Tăng 100 điểm TOEIC ngay trong tháng đầu tiên.',
+        perks: ['✓ Đóng theo tháng linh hoạt', '✓ Tăng 100đ/tháng đầu', '✓ Học thử 2 buổi 0đ'],
+        courseValue: 'TOEIC Thường 12 Buổi (1.6 Tr)'
+      }
+    };
+
+    let selectedRecommendedCourse = '';
+
+    function setupSmartRecommender() {
+      const finderBtns = document.querySelectorAll('.finder-btn');
+      const finderResultBox = document.getElementById('finder-result');
+      const recPackageName = document.getElementById('rec-package-name');
+      const recPackagePrice = document.getElementById('rec-package-price');
+      const recPackageReason = document.getElementById('rec-package-reason');
+      const recPackagePerks = document.getElementById('rec-package-perks');
+
+      finderBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          finderBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const goal = btn.getAttribute('data-goal');
+          const data = recommendationsData[goal];
+
+          if (data) {
+            recPackageName.innerText = data.name;
+            recPackagePrice.innerText = data.price;
+            recPackageReason.innerText = data.reason;
+            selectedRecommendedCourse = data.courseValue;
+
+            recPackagePerks.innerHTML = data.perks.map(p => `<span>${p}</span>`).join('');
+            finderResultBox.style.display = 'block';
+            finderResultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+      });
+    }
+
+    function openModalFromRec() {
+      if (selectedRecommendedCourse) {
+        openModal(selectedRecommendedCourse);
+      } else {
+        openModal('Gói Trọn Gói 3 Giai Đoạn - Từ 0 -> Có Việc Làm (30 Tr)');
+      }
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       runTOEICCalc();
       updateTabCounts();
+      setupSmartRecommender();
     });
   </script>
 </body>
